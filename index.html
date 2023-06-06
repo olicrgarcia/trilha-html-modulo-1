@@ -1,62 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="IMAGENS/favicon.ico">
+   <title>Primeiros passos</title>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+   <h1>Entendendo o que é HTML</h1>
+   <hr>
+   <h2 id="sumario">Sumário</h2>
+   <ul>
+      <a href="#primeiros_passos"><li>Primeiros passo</li></a>
+      <a href="#tags_atribs"><li>Tags e Atributos</li></a>
+      <a href="#refs"><li>Referências</li></a>
+   </ul>
+   <hr>
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h2 id="primeiros_passos">Primeiros passos</h2>
+   <a href="#sumario"><small>Voltar ao Topo &uparrow;</small></a>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h3>O que é o HTML</h3>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <p>A linguagem HTML <i>(ou Linguagem de Marcação de Hipertexto)</i> é uma linguagem focada para o desenvolvimento de sites para a Web.</p>
+   <p>Ela foi desenvolvida inicialmente em 1991 por <strong><a href="#refs">Tim Berners<sup>1</sup></a></strong>, projetado para interligar instituições e compartilhar informações com mais facilidade.</p>
+   <p>Hoje, o <abbr title="Linguagem de Marcação de Hipertexto">HTML</abbr> segue sendo essencial para a construção de sites para Web e qualquer um que possua um computador, um navegador (ou Browser) em casa, pode começar a desenvolver facilmente seu primeiro site.</p>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h3>Estrutura Básica do HTML</h3>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <p>O HTML possui uma estrutura básica para inicial seu site na Web.</p>
+   <img src="IMAGENS/estrutura-basica-html.png" alt="Estrura básica para um site em HTML." width="400">
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+   <p>Ele é composto por <strong>Tags e Atributos</strong> que vamos falar mais a frente. Por exemplo, para que nosso site funcione, é necessário que ele tenha nossa Tag <i><mark>html</mark></i> onde ficará toda a construção do site.</p>
+   <p>Em seguida, ele é composto pelo nosso <i><mark>head</mark></i>, onde ficarão as configurações do nosso site da Web, nele, podemos colocar o <i><mark>tittle</mark></i> (ou <i>título</i>) da nossa página na Web, configurar o nosso <i><mark>Favicon</mark></i> e o <i><mark>idioma</mark></i> do nosso site.</p>
+
+   <img src="IMAGENS/configurando_siteweb_html.png" alt="Configurando site na Web através do HEAD em HTML" width="400">
+   
+   <hr>
+
+   <h2 id="tags_atribs">Tags e Atributos</h2>
+   <a href="#sumario"><small>Voltar ao Topo &uparrow;</small></a>
+
+   <h3>O que são Tags?</h3>
+   <p>As Tags são utilizadas para informar ao navegador que irá ler nosso site em <abrr title="Linguagem de Marcação de Hipertexto">HTML</abrr>, ou seja, o navegador irá interpretar todos os códigos que estão em nosso projeto e irá formatar de acordo.</p>
+   <p>Este parágrafo que você está lendo agora, está dentro de uma Tag por exemplo, e ela é escrita desta maneira:  <i><mark>&lt;p&gt; &lt;/p&gt;</mark></i></p>
+   <p>O <strong><mark>p</mark></strong> inicial está realizando a abertura, enquanto que o <strong><mark>/p</mark></strong> está fechando a Tag, em alguns casos, a Tag não necessáriamente poderá ser fechada, que é o exemplo da Tag <i><mark>&lt;img&gt;</mark></i>, que é nossa Tag de imagem. </p>
+
+   <img src="IMAGENS/gato.jpg" alt="Um gato!" width="400" title="Um gato!">
+
+   <h3>E o que são Atributos?</h3>
+
+   <p>O Atributos servem como parâmetros para nossas Tags, como se fossem algumas configurações que queremos nelas. A imagem anterior de um gato precisou receber alguns parâmetros para o nosso navegador poder ler:</p>
+   
+   <blockquote>&lt;img <mark>src=</mark> "Caminho da nossa imagem" <mark>alt=</mark>"Texto alternativo da nossa imagem" <mark>width=</mark>"Tamanho da nossa imagem"&gt;</blockquote>
+
+   <ul>
+      <li><strong>src</strong>: Origem da nossa imagem, que pode ser um link ou caminho na nossa máquina.</li>
+      <li><strong>alt</strong>: Texto alternativo da nossa imagem.</li>
+      <li><strong>width</strong>: Tamanho da nossa imagem.</li>
+   </ul>
+
+   <h3>Mais sobre Tags!</h3>
+   <p>Existem Tags que vamos utilizar mais no dia a dia e que são as mais básicas, mas existem ainda mais possibilidades de utilizar Tags diferentes.</p>
+
+   <blockquote style="font-family:verdana"><u>Podemos modificar a fonte destes textos.</u></blockquote>
+   <strong><blockquote style="color:red;">Alterar sua cor...</blockquote></strong>
+   <blockquote><small><i>E muito mais!...</i></small></blockquote>
+
+   <hr>
+
+   <h2 id="refs">Referências</h2> 
+   <a href="#sumario"><small>Voltar ao Topo &uparrow;</small></a>
+
+   <ol>
+      <a href="https://pt.wikipedia.org/wiki/Tim_Berners-Lee"><li>Quem é Tim Berners?</li></a>
+      <a href="https://www.w3schools.com/default.asp"><li>Plataforma W3Schools</li></a>
+      <a href="https://www.dio.me/en"><li>Plataforma de Cursos DIO</li></a>
+
+
+   </ol>
 
 </body>
 </html>
